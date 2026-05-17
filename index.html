@@ -1,62 +1,536 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Піца і Точка — Справжня Неаполітанська Піца</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,900&family=Unbounded:wght@300;400;700;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
 <body>
-    <header class="header bg-body-tertiary">
-        <a class="logo" aria-current="page" href="#">Піца і точка</a>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+<!-- ══════════ НАВІГАЦІЯ ══════════ -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">🍕</span>
+    <span class="logo-text">Піца і Точка</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Головна</a></li>
+    <li><a href="#pizzas">Піци</a></li>
+    <li><a href="#drinks">Напої</a></li>
+    <li><a href="#snacks">Закуски</a></li>
+    <li><a href="#about">Про нас</a></li>
+    <li><a href="#location">Локація</a></li>
+  </ul>
+  <a href="tel:+380441234567" class="nav-call">📞 Замовити</a>
+</nav>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Головна</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Меню</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Про нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Відгуки</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Піца і точка</h1>
-            <h2 class="mono">Продаємо піци самі смані в світі</h2>
-            <img src="https://cdn-media.choiceqr.com/prod-eat-parmesan-che/thumbnail_ZAFRnkj-FHmDIfT-rsGQCvb_B-b-k.jpeg"
-                width="400px">
-            <h3 class="futuristic">Піцт свіжі й без хімі</h3>
-            <p>Всі інгрідієнти зроблені на натуральних продуктах</p>
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
 
-        </section>
-    </main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <div class="floater f1">🍕</div>
+  <div class="floater f2">🧀</div>
+  <div class="floater f3">🍅</div>
+  <div class="floater f4">🌿</div>
+  <div class="floater f5">🔥</div>
+  <div class="floater f6">🫒</div>
+  <div class="floater f7">🥓</div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Неаполітанська традиція · Київ · З 2018 року</p>
+    <h1 class="hero-title">
+      <span class="t-big">ПІЦА</span>
+      <span class="t-small">І&nbsp;ТОЧКА</span>
+    </h1>
+    <p class="hero-sub">Дров'яна піч · Тісто на заквасці · Преміальні інгредієнти</p>
+    <div class="hero-cta">
+      <a href="#pizzas" class="btn-red">Переглянути меню</a>
+      <a href="#location" class="btn-outline">Знайти нас</a>
+    </div>
+  </div>
+  <div class="scroll-hint">↓</div>
+</section>
+
+<!-- ══════════ ПЕРЕВАГИ ══════════ -->
+<div class="features-bar">
+  <div class="feat"><span>🔥</span><div><strong>Дров'яна піч</strong><p>485°C — хрустка скоринка за 90 сек</p></div></div>
+  <div class="feat-div"></div>
+  <div class="feat"><span>🌾</span><div><strong>Власне тісто</strong><p>72-годинна закваска щодня</p></div></div>
+  <div class="feat-div"></div>
+  <div class="feat"><span>🚚</span><div><strong>Доставка 30 хв</strong><p>Гаряча піца до вашого порогу</p></div></div>
+  <div class="feat-div"></div>
+  <div class="feat"><span>🌿</span><div><strong>Свіжі продукти</strong><p>Закуповуємо на ринку щоранку</p></div></div>
+</div>
+
+<!-- ══════════ ПІЦИ ══════════ -->
+<section class="menu-sec" id="pizzas">
+  <div class="sec-head">
+    <span class="tag">Наше меню</span>
+    <h2>Піци</h2>
+    <p>Оберіть розмір і додайте інгредієнти на ваш смак</p>
+  </div>
+
+  <div class="pizza-grid">
+
+    <!-- Картка 1 -->
+    <article class="pcard">
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Маргарита" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Маргарита</h3>
+          <span class="veg-mark" title="Вегетаріанська">🌱</span>
+        </div>
+        <p class="pcard-desc">Томати Сан-Марцано, моцарела фіор ді латте, свіжий базилік, оливкова олія першого пресування.</p>
+        <div class="ptags">
+          <span class="ptag">Класика</span>
+          <span class="ptag green-t">Вегетаріанська</span>
+        </div>
+
+        <!-- Розмір -->
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p1s" name="p1sz"><label for="p1s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴260</b></label>
+            <input type="radio" id="p1m" name="p1sz" checked><label for="p1m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴280</b></label>
+            <input type="radio" id="p1l" name="p1sz"><label for="p1l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴340</b></label>
+          </div>
+        </div>
+
+        <!-- Інгредієнти -->
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Моцарела</span><small>+₴25</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🍄</span><span>Гриби</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🫒</span><span>Оливки</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌶️</span><span>Чилі</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🥓</span><span>Бекон</span><small>+₴35</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧄</span><span>Часник</span><small>+₴10</small></label>
+          </div>
+        </details>
+
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+    <!-- Картка 2 -->
+    <article class="pcard">
+      <div class="pcard-badge red-badge">🔥 Хіт</div>
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80" alt="Пепероні" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Пепероні</h3>
+          <span class="hot-mark">🌶️</span>
+        </div>
+        <p class="pcard-desc">Пікантна ковбаска пепероні, подвійна моцарела, томатний соус, орегано — хрустка й ароматна.</p>
+        <div class="ptags">
+          <span class="ptag red-t">Гостра</span>
+          <span class="ptag">Хіт продажів</span>
+        </div>
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p2s" name="p2sz"><label for="p2s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴295</b></label>
+            <input type="radio" id="p2m" name="p2sz" checked><label for="p2m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴320</b></label>
+            <input type="radio" id="p2l" name="p2sz"><label for="p2l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴385</b></label>
+          </div>
+        </div>
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Моцарела</span><small>+₴25</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌶️</span><span>Халапеньо</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🫒</span><span>Оливки</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧅</span><span>Цибуля</span><small>+₴10</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🥩</span><span>Салямі</span><small>+₴40</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌿</span><span>Базилік</span><small>+₴10</small></label>
+          </div>
+        </details>
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+    <!-- Картка 3 -->
+    <article class="pcard">
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Кватро Формаджі" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Кватро Формаджі</h3>
+          <span class="veg-mark">🌱</span>
+        </div>
+        <p class="pcard-desc">Чотири сири: моцарела, горгонзола, пармезан і таледжо. Вершкова насолода для сиролюбів.</p>
+        <div class="ptags">
+          <span class="ptag gold-t">Преміум</span>
+          <span class="ptag green-t">Вегетаріанська</span>
+        </div>
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p3s" name="p3sz"><label for="p3s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴320</b></label>
+            <input type="radio" id="p3m" name="p3sz" checked><label for="p3m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴360</b></label>
+            <input type="radio" id="p3l" name="p3sz"><label for="p3l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴430</b></label>
+          </div>
+        </div>
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Пармезан</span><small>+₴30</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🍯</span><span>Мед</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌰</span><span>Горіхи</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌿</span><span>Руккола</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🫒</span><span>Оливки</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧄</span><span>Часник</span><small>+₴10</small></label>
+          </div>
+        </details>
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+    <!-- Картка 4 -->
+    <article class="pcard">
+      <div class="pcard-badge gold-badge">✨ Новинка</div>
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" alt="Прошуто е Фунгі" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Прошуто е Фунгі</h3>
+        </div>
+        <p class="pcard-desc">Ніжна шинка прошуто, лісові гриби, моцарела, розмарин і крем із трюфелю.</p>
+        <div class="ptags">
+          <span class="ptag gold-t">Преміум</span>
+          <span class="ptag">М'ясна</span>
+        </div>
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p4s" name="p4sz"><label for="p4s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴350</b></label>
+            <input type="radio" id="p4m" name="p4sz" checked><label for="p4m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴395</b></label>
+            <input type="radio" id="p4l" name="p4sz"><label for="p4l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴460</b></label>
+          </div>
+        </div>
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🍖</span><span>Прошуто</span><small>+₴45</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🍄</span><span>Трюфель</span><small>+₴60</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Пармезан</span><small>+₴30</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌿</span><span>Розмарин</span><small>+₴10</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧅</span><span>Цибуля</span><small>+₴10</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🥩</span><span>Салямі</span><small>+₴40</small></label>
+          </div>
+        </details>
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+    <!-- Картка 5 -->
+    <article class="pcard">
+      <div class="pcard-badge red-badge">😈 Дуже гостра</div>
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&q=80" alt="Дяболо" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Дяболо</h3>
+          <span class="hot-mark">🌶️🌶️</span>
+        </div>
+        <p class="pcard-desc">Пепероні, халапеньо, гостра салямі, чилі олія та подвійна моцарела — для сміливців.</p>
+        <div class="ptags">
+          <span class="ptag red-t">Дуже гостра</span>
+          <span class="ptag">М'ясна</span>
+        </div>
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p5s" name="p5sz"><label for="p5s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴305</b></label>
+            <input type="radio" id="p5m" name="p5sz" checked><label for="p5m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴340</b></label>
+            <input type="radio" id="p5l" name="p5sz"><label for="p5l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴405</b></label>
+          </div>
+        </div>
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🌶️</span><span>Чилі</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌶️</span><span>Халапеньо</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Моцарела</span><small>+₴25</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🥩</span><span>Салямі</span><small>+₴40</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧄</span><span>Часник</span><small>+₴10</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🫒</span><span>Оливки</span><small>+₴20</small></label>
+          </div>
+        </details>
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+    <!-- Картка 6 -->
+    <article class="pcard">
+      <div class="pcard-img-box">
+        <img src="https://images.unsplash.com/photo-1604917877934-07d8d248d396?w=600&q=80" alt="Вердуре" loading="lazy"/>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-top">
+          <h3>Вердуре</h3>
+          <span class="veg-mark">🌱</span>
+        </div>
+        <p class="pcard-desc">Запечені овочі: цукіні, баклажан, перець, томати черрі, рікота та свіжа зелень.</p>
+        <div class="ptags">
+          <span class="ptag green-t">Корисна</span>
+          <span class="ptag green-t">Вегетаріанська</span>
+        </div>
+        <div class="size-block">
+          <p class="size-lbl">Розмір:</p>
+          <div class="size-row">
+            <input type="radio" id="p6s" name="p6sz"><label for="p6s" class="sopt"><span class="si">🍕</span><span>Мала</span><small>25 см</small><b>₴265</b></label>
+            <input type="radio" id="p6m" name="p6sz" checked><label for="p6m" class="sopt"><span class="si mid">🍕</span><span>Середня</span><small>30 см</small><b>₴295</b></label>
+            <input type="radio" id="p6l" name="p6sz"><label for="p6l" class="sopt"><span class="si big">🍕</span><span>Велика</span><small>40 см</small><b>₴355</b></label>
+          </div>
+        </div>
+        <details class="extras">
+          <summary>➕ Додати інгредієнти</summary>
+          <div class="ex-grid">
+            <label class="ex"><input type="checkbox"><span class="eico">🧀</span><span>Рікота</span><small>+₴25</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🍅</span><span>Черрі</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌿</span><span>Руккола</span><small>+₴15</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🫒</span><span>Оливки</span><small>+₴20</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🧅</span><span>Цибуля</span><small>+₴10</small></label>
+            <label class="ex"><input type="checkbox"><span class="eico">🌶️</span><span>Чилі</span><small>+₴15</small></label>
+          </div>
+        </details>
+        <a href="tel:+380441234567" class="order-btn">Замовити 🍕</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══════════ НАПОЇ ══════════ -->
+<section class="menu-sec alt-sec" id="drinks">
+  <div class="sec-head">
+    <span class="tag">Освіжаючі</span>
+    <h2>Напої</h2>
+    <p>До кожної піци — ідеальний напій</p>
+  </div>
+  <div class="drinks-grid">
+
+    <div class="dcard">
+      <span class="dico"><img src="https://e7.pngegg.com/pngimages/559/914/png-clipart-lemonade-lemonade.png" alt="" width="100px", height="100px"></span>
+      <h3>Лимонад домашній</h3>
+      <p>Свіжий лимон, м'ята, газована вода, мед</p>
+      <span class="dprice">₴ 85</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d1" checked> 300 мл</label>
+        <label><input type="radio" name="d1"> 500 мл <em>+₴30</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+    <div class="dcard">
+      <span class="dico"><img src="./img/coca-cola.png" alt="" width="100px", height="100px"></span>
+      <h3>Coca-Cola</h3>
+      <p>Охолоджена, фірмова банка</p>
+      <span class="dprice">₴ 60</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d2" checked> 330 мл</label>
+        <label><input type="radio" name="d2"> 1 л <em>+₴50</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+
+    <div class="dcard">
+      <span class="dico"><img src="https://w7.pngwing.com/pngs/319/1021/png-transparent-sprite-soda-can-soft-drink-sprite-zero-lemon-lime-drink-sprite-sprite-animation-sprite-game-soft-thumbnail.png" alt="" width="100px", height="100px"></span>
+      <h3>Спрайт</h3>
+      <p>Охолоджена, фірмова банка</p>
+      <span class="dprice">₴ 60</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d3" checked> 330 мл</label>
+        <label><input type="radio" name="d3"> 1 л <em>+₴50</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+    <div class="dcard">
+      <span class="dico"><img src="https://w7.pngwing.com/pngs/60/91/png-transparent-white-wine-wine-glass-champagne-glass-champagne-glass-wine-glass-splash-thumbnail.png" alt="" width="100px", height="100px"></span>
+      <h3>Вино Chianti</h3>
+      <p>Тоскана, Італія — ідеально до піци</p>
+      <span class="dprice">₴ 145</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d4" checked> 150 мл</label>
+        <label><input type="radio" name="d4"> Пляшка <em>+₴480</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+    <div class="dcard">
+      <span class="dico"><img src="https://noa.ua/wp-content/uploads/2021/02/apelsinovij-sik-706x716.png" alt="" width="100px", height="100px"></span>
+      <h3>Апельсиновий сік</h3>
+      <p>Охолоджена, фірмова упоковка</p>
+      <span class="dprice">₴ 90</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d5" checked> 300 мл</label>
+        <label><input type="radio" name="d5"> 500 мл <em>+₴40</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+    <div class="dcard">
+      <span class="dico"><img src="" alt="" width="100px", height="100px"></span>
+      <h3>Еспресо</h3>
+      <p>Подвійний шот, зерна з Ефіопії</p>
+      <span class="dprice">₴ 70</span>
+      <div class="dsizes">
+        <label><input type="radio" name="d6" checked> Одинарний</label>
+        <label><input type="radio" name="d6"> Подвійний <em>+₴30</em></label>
+      </div>
+      <a href="tel:+380441234567" class="dbtn">Замовити</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ЗАКУСКИ ══════════ -->
+<section class="menu-sec" id="snacks">
+  <div class="sec-head">
+    <span class="tag">Апетайзери</span>
+    <h2>Закуски</h2>
+    <p>Поки чекаєш на піцу — нехай щось буде!</p>
+  </div>
+  <div class="snacks-grid">
+
+    <div class="scard">
+      <div class="scard-left"><span>🧄</span></div>
+      <div class="scard-right">
+        <h3>Часниковий хліб</h3>
+        <p>Хрустка чіабатта, вершкове масло, часник, петрушка</p>
+        <div class="scard-foot"><span class="sprice">₴ 75</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-left"><span>🥗</span></div>
+      <div class="scard-right">
+        <h3>Салат Капрезе</h3>
+        <p>Моцарела буфала, томати черрі, базилік, бальзамік</p>
+        <div class="scard-foot"><span class="sprice">₴ 145</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-left"><span>🫓</span></div>
+      <div class="scard-right">
+        <h3>Брускета класична</h3>
+        <p>Підсмажений хліб, свіжі томати, базилік, оливкова олія</p>
+        <div class="scard-foot"><span class="sprice">₴ 95</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-left"><span>🧆</span></div>
+      <div class="scard-right">
+        <h3>Суппрі</h3>
+        <p>Смажені рисові кульки з моцарелою — римський стріт-фуд</p>
+        <div class="scard-foot"><span class="sprice">₴ 120</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-left"><span>🫒</span></div>
+      <div class="scard-right">
+        <h3>Мариновані оливки</h3>
+        <p>Каламата, трави, лимонна цедра, часник</p>
+        <div class="scard-foot"><span class="sprice">₴ 85</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="scard-left"><span>🍮</span></div>
+      <div class="scard-right">
+        <h3>Панна Котта</h3>
+        <p>Ніжний вершковий десерт із соусом із лісових ягід</p>
+        <div class="scard-foot"><span class="sprice">₴ 110</span><a href="tel:+380441234567" class="sbtn">+</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ПРО НАС ══════════ -->
+<section class="about-sec" id="about">
+  <div class="about-visual">
+    <div class="pizza-spin">🍕</div>
+    <div class="since-badge">★ З 2018</div>
+    <div class="about-img-grid">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Піцерія" loading="lazy"/>
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=400&q=80" alt="Піца в печі" loading="lazy"/>
+    </div>
+  </div>
+  <div class="about-text">
+    <span class="tag light-tag">Наша історія</span>
+    <h2>Більше ніж просто піца</h2>
+    <p>«Піца і Точка» народилась із пристрасті до справжньої неаполітанської кухні. Наш засновник Андрій Коваленко провів рік у Неаполі, вивчаючи мистецтво справжнього <em>pizzaiolo</em>. У 2018 році він відкрив першу піцерію у серці Києва.</p>
+    <p>Сьогодні ми — улюблене місце тисяч киян та гостей міста. Кожна піца — це витвір мистецтва: тісто на 72-годинній заквасці, імпортовані томати Сан-Марцано, моцарела фіор ді латте та сезонні локальні інгредієнти.</p>
+    <div class="stats-row">
+      <div class="stat"><span class="snum">50 000+</span><span class="slbl">задоволених гостей</span></div>
+      <div class="stat"><span class="snum">18</span><span class="slbl">видів піц</span></div>
+      <div class="stat"><span class="snum">4.9★</span><span class="slbl">рейтинг Google</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ЛОКАЦІЯ ══════════ -->
+<section class="loc-sec" id="location">
+  <div class="sec-head light-head">
+    <span class="tag">Де ми?</span>
+    <h2>Знайди нас</h2>
+    <p>Ми чекаємо тебе у центрі Києва</p>
+  </div>
+  <div class="loc-wrap">
+    <div class="loc-info">
+      <div class="icard"><span>📍</span><div><h4>Адреса</h4><p>вул. Хрещатик, 15<br>Київ, 01001</p></div></div>
+      <div class="icard"><span>📞</span><div><h4>Телефони</h4><p><a href="tel:+380441234567">+380 44 123-45-67</a><br><a href="tel:+380678901234">+380 67 890-12-34</a></p></div></div>
+      <div class="icard"><span>🕐</span><div><h4>Години роботи</h4><p>Пн–Чт: 11:00–22:00<br>Пт–Нд: 11:00–00:00</p></div></div>
+      <div class="icard"><span>📧</span><div><h4>Email</h4><p><a href="mailto:hello@pitsaitochka.ua">hello@pitsaitochka.ua</a></p></div></div>
+      <div class="icard"><span>📲</span><div><h4>Соцмережі</h4><p><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></p></div></div>
+    </div>
+    <div class="map-wrap">
+      <iframe
+        title="Піца і Точка на карті"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6!2d30.5234!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56a86fbbbd%3A0x6dc0f7b1ecf5bcf2!2z0KXRgNC10YnQsNGC0LjQuiwg0JrQuNGX0LI!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="fbrand">
+      <div class="flogo"><span>🍕</span><span>Піца і Точка</span></div>
+      <p>Справжня неаполітанська піца<br>у серці Києва з 2018 року</p>
+      <a href="tel:+380441234567" class="ftel">+380 44 123-45-67</a>
+    </div>
+    <div class="fcol"><h4>Меню</h4><a href="#pizzas">Піци</a><a href="#drinks">Напої</a><a href="#snacks">Закуски</a></div>
+    <div class="fcol"><h4>Компанія</h4><a href="#about">Про нас</a><a href="#location">Контакти</a><a href="#">Кар'єра</a><a href="#">Франшиза</a></div>
+    <div class="fcol"><h4>Слідкуй</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">YouTube</a></div>
+  </div>
+  <div class="fbot">
+    <p>© 2024 Піца і Точка. Усі права захищені.</p>
+    <p>Зроблено з ❤️ та 🍕 у Києві</p>
+  </div>
+</footer>
+
 </body>
-
 </html>
